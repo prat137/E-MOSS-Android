@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#4386F4</color>-->
+    <!--<color name="toolBarColor">#4386F4</color>-->
+    <!--<color name="colorPrimaryDark">#136FA8</color>-->
+    <!--<color name="colorPrimaryDark1">#2b86cc</color>-->
+    <!--<color name="colorAccent">#16AFFF</color>-->
+
+    <color name="colorPrimary">#000000</color>
+    <color name="toolBarColor">#4386F4</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryDark1">#2b86cc</color>
+    <color name="colorAccent">#000000</color>
+
+
+    <color name="black">#000000</color>
+    <color name="light_Black">#99000000</color>
+    <color name="light_Gray">#DFE0E0</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#136FA8</color>
+    <color name="Yellow">#FFC402</color>
+    <color name="selected_tab">#55C5FF</color>
+    <color name="tab_background">#16AFFF</color>
+    <color name="purple">#0A0AFA</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="dark_green">#40AD18</color>
+    <color name="dark_gray">#7e7e7e</color>
+    <color name="hintColor">#99888888</color>
+    <color name="very_light_gray">#F2F2F3</color>
+    <color name="book_now">#1295D8</color>
+    <color name="search_car_gray">#DCDCDC</color>
+    <color name="element">#f4f4f4f4</color>
+    <color name="details">#8D8D8D</color>
+    <color name="heading">#686868</color>
+    <color name="status_bar">#F2F5F5</color>
+    <color name="text_color">#8f8f8f</color>
+    <color name="line_color">#cccccc</color>
+    <color name="line_color1">#b1b1b1</color>
+    <color name="current_loc">#239DFF</color>
+    <color name="sort_text">#AAAAAA</color>
+    <color name="filter_text">#575757</color>
+    <color name="filter_text1">#686868</color>
+    <color name="gray_55">#555555</color>
+    <color name="disable_55">#cccccc</color>
+    <color name="dark_disable_55">#e2e2e2</color>
+    <color name="blue_element">#116ea7</color>
+    <color name="blue_element1">#1b77c1</color>
+    <color name="line_color2">#aaaaaa</color>
+    <color name="line_color3">#e2e2e2</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="transparent_blue">#9955C5FF</color>
+    <color name="colorBackground">#136FA8</color>
+</resources>

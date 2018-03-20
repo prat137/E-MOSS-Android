@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.keval.e_moss"
+
+        manifestPlaceholders = [manifestApplicationId          : "com.taxinearuportal",
+                                onesignal_app_id               : "619a53b3-66d9-461c-94cb-d7f77d355b79",
+                                onesignal_google_project_number: "1052712708615"]
+
+
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+       multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v13:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.android.gms:play-services:10.0.1'
+
+    compile 'org.apache.httpcomponents:httpmime:4.2.3'
+
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    testCompile 'junit:junit:4.12'
+}

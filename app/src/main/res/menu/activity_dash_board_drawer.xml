@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/menuDashBoardNavBarDashBoard"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/menuDashBoardNavBarGovYojanas"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/government_yojanas" />
+        <item
+            android:id="@+id/menuDashBoardNavBarBankServices"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/banks_services" />
+        <item
+            android:id="@+id/menuDashBoardNavBarDigitalBonofied"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/digital_bonofied" />
+
+        <item
+            android:id="@+id/menuDashBoardNavBarSubscribeService"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/subscribe_service" />
+
+        <item
+            android:id="@+id/menuDashBoardNavBarPaymentsCircular"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/payment_circular" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/menuDashBoardNavBarKioskCenter"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/kiosk_center" />
+            <item
+                android:id="@+id/menuDashBoardNavBarContactUs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/contact_us" />
+        </menu>
+    </item>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/menuDashBoardNavBarAppInfo"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/app_info" />
+            <item
+                android:id="@+id/menuDashBoardNavBarShareApp"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/share_this_app" />
+            <item
+                android:id="@+id/menuDashBoardNavBarRateApp"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/rate_this_app" />
+            <item
+                android:id="@+id/menuDashBoardNavBarMoreApp"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/more_apps" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clSignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_register"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/ivSignUpBack"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:src="@mipmap/ic_arrow_back"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etSignUpUserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:background="@drawable/grayborder"
+                android:hint="@string/user_name"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/dp10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textSize="@dimen/generalTextSizeSmall" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSignUpFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp37"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <EditText
+                    android:id="@+id/etSignUpLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/generalTextBoxSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:nextFocusForward="@+id/etSignUpContact"
+                    android:paddingLeft="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/generalTextBoxSize"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/darkgrayborder"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <EditText
+                    android:id="@+id/etSignUpContact"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/generalTextBoxSize"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:digits="1234567890"
+                    android:hint="@string/contact"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpAvailableNumber"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_available"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpUnAvailableNumber"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_unavailable"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/etSignUpEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpAvailableEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_available"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpUnAvailableEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_unavailable"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSignUpPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/generalTextBoxSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <EditText
+                    android:id="@+id/etSignUpConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/generalTextBoxSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:hint="@string/confirm_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpAvailablePass"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_available"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpUnAvailablePass"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_unavailable"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10">
+
+                <EditText
+                    android:id="@+id/etSignUpAlternateEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/generalTextBoxSize"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayborder"
+                    android:hint="@string/alternate_email_"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpAvailableAlternateEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_available"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpUnAvailableAlternateEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/img_unavailable"
+
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btSignUpSaveNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/generalButtonSize"
+                android:layout_marginBottom="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/button_click"
+                android:gravity="center"
+                android:text="@string/success"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_click"
+                android:textSize="@dimen/generalTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

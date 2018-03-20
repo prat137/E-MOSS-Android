@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clContactUs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etContactUsName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/grayborder"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:hint="@string/user_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/dp10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textSize="@dimen/generalTextSizeSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/contact_us"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp35"
+
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/darkgrayborder"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+
+                <EditText
+                    android:id="@+id/etContactUsMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/grayborder"
+                    android:digits="0123456789"
+                    android:hint="@string/enter_contact_no"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/generalTextSizeSmall" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/email"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etContactUsEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/grayborder"
+                android:hint="@string/enter_email_id_"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dp10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textSize="@dimen/generalTextSizeSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/subject_"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etContactUsSubject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/grayborder"
+                android:hint="@string/enter_sub"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dp10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textSize="@dimen/generalTextSizeSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/message_"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etContactUsMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/grayborder"
+                android:gravity="top"
+                android:maxLength="200"
+                android:minHeight="200dp"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/generalTextSizeSmall" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btContactSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:background="@drawable/button_click"
+            android:onClick="submitContact"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall" />
+
+    </LinearLayout>
+</LinearLayout>

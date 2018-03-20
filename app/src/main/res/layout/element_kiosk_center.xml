@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llElementKioskCenter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp5">
+
+    <com.example.keval.e_moss.Utils.CircleImageView
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@mipmap/splash" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/ripple_anim"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiosk Name :- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiosk Address :- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number :- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category :- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_anim"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tvKioskCenterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramesh Shah"
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKioskCenterAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9, bjscbjkbz,jchzkcz,kcbsbcz"
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKioskCenterMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 8465987456"
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKioskCenterEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jzdzh@hhj.cij"
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKioskCenterCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N.A."
+            android:textColor="@color/black"
+            android:textSize="@dimen/generalTextSizeSmall"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
